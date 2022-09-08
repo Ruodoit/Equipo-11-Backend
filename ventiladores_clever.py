@@ -167,7 +167,7 @@ cursor.close()
 mydb.close()
 
 if __name__=='__main__':
-    app.run(host='0.0.0.0', port=80,debug=True)   
+    app.run(port=80,debug=True)   
 
-app.config.from_object('config.dev')
-app.config.from_envvar('SPOTPIX_SETTINGS', silent=True)
+# app.config.from_object('config.dev')
+# app.config.from_envvar('SPOTPIX_SETTINGS', silent=True)

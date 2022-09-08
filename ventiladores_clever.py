@@ -167,7 +167,7 @@ cursor.close()
 mydb.close()
 
 if __name__=='__main__':
-    app.run(port=80,debug=True, host='0.0.0.0')   
+    app.run(port=80,debug=True, host='https://eq11-aire.herokuapp.com/')   
 
 # app.config.from_object('config.dev')
 # app.config.from_envvar('SPOTPIX_SETTINGS', silent=True)

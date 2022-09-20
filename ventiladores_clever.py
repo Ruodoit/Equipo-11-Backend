@@ -8,7 +8,7 @@ cursor=mydb.cursor()
 cursor.execute("select * from ventiladores;")
 resultados=cursor.fetchall()
 
-@app.route('/eq11-aire.herokuapp.com/dispositivos/ventiladores',methods=['GET'])
+@app.route('//eq11-aire.herokuapp.com/dispositivos/ventiladores',methods=['GET'])
 def Ventiladores():
     resultado={"ventiladores":[]}
     i=0 
@@ -167,7 +167,7 @@ cursor.close()
 mydb.close()
 
 if __name__=='__main__':
-    app.run(port=80,debug=True, host='eq11-aire.herokuapp.com/')   
+    app.run(debug=True)   
 
 # app.config.from_object('config.dev')
 # app.config.from_envvar('SPOTPIX_SETTINGS', silent=True)
